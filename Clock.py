@@ -1,11 +1,11 @@
 #Code Coach clock clone
-#tkinter for graphics
-from tkinter import *
-from tkinter.ttk import *
-#time server
-from time import strftime
-#makes windo,i think
-root = Tk()
+
+from tkinter import *       #tkinter for graphics
+from tkinter.ttk import *   #tkinter for graphics
+
+from time import strftime   #time server
+
+root = Tk()                  #makes window?
 root.title("digital clock")
 #functions
 def time():
