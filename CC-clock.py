@@ -1,4 +1,6 @@
 #Code Coach clock clone
+#needed help --did not work
+#second effort in repo
 
 from tkinter import *       #tkinter for graphics
 from tkinter.ttk import *   #tkinter for graphics
