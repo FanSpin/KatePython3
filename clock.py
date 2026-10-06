@@ -13,9 +13,8 @@ def time():                        #python only --works outside tkinter
     label.config(text=now)
     label.after(1000, time)
 
-label = Label(root, font=("ds-digital",80,"bold"),background="black",foreground="cyan")
-label.pack(anchor="center")   #remove label.pack
+label = Label(root, font=("ds-digital",80,"bold"),background="black",foreground="cyan")#many changes
+label.pack(anchor="center")   #removed adittional (label=)
 
 time()                              # run once
-mainloop()                          # dont close window, yet
-                                    #try root.mainloop
+mainloop()                          # keeps window open
