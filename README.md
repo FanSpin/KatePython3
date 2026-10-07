@@ -4,4 +4,4 @@ clock.py is the second effort
 CC did not work (on my machines)\
 might need\
  **sudo apt-get install python3-tk**\
- to comlete\
+ to comlete
