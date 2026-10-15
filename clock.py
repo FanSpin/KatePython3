@@ -1,4 +1,5 @@
 #Code Coach clock clone
+#tested ok
 
 from tkinter import *              #tkinter for graphics
 from tkinter.ttk import *          #tkinter for graphics
