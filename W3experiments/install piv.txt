@@ -1,0 +1,17 @@
+install pip for python
+
+You just need to install the missing packages. Run:
+
+python3 -m pip install matplotlib numpy scikit-learn
+
+If pip isn't found, try python3 -m ensurepip first, or install it via your package manager:
+
+sudo apt install python3-pip
+
+Tip: On some newer Linux distros (especially Ubuntu 23.04+), the system Python is "externally managed" and will refuse pip installs system-wide. If you hit that error, either use a virtual environment:
+
+python3 -m venv ~/venv
+source ~/venv/bin/activate
+pip install matplotlib numpy scikit-learn
+
+or add --break-system-packages to the pip command (less ideal but works for quick experiments).

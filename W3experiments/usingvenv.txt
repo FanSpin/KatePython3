@@ -1,0 +1,66 @@
+using venv
+
+
+What it actually is
+A venv is just a folder that contains its own copy of Python + its own pip + its own package directory. When you "activate" it, your shell simply points python and pip at that folder instead of the system ones. That's all — no magic.
+
+
+Full example (Linux/KDE)
+
+# 1. Go to your project folder
+cd ~/Downloads/W3experiments
+
+# 2. Create the venv (one-time, makes a folder called "venv")
+python3 -m venv venv
+
+# 3. Activate it
+source venv/bin/activate
+
+After step 3, your prompt changes to show (venv):
+
+(venv) daniel@hp510:~/Downloads/W3experiments$
+
+ That prefix is your visual cue that you're inside it. Now pip and python refer to the venv's copies:
+
+
+ # 4. Install packages — they go into the venv folder, not system-wide
+pip install matplotlib numpy scikit-learn
+
+# 5. Run your script
+python test.py
+
+
+How to launch it again (next time)
+Just cd into the project folder and run the same activate command:
+
+
+cd ~/Downloads/W3experiments
+source venv/bin/activate
+
+
+cd ~/Downloads/W3experiments
+source venv/bin/activate
+
+How to leave (type)
+
+deactivate
+
+Your prompt goes back to normal.
+
+How to practice
+Try this exercise:
+
+mkdir ~/venv-practice && cd ~/venv-practice
+python3 -m venv myenv
+source myenv/bin/activate
+pip install requests
+pip list          # see what's in the venv
+deactivate
+pip list          # see system packages (requests won't be here)
+source myenv/bin/activate   # come back in
+deactivate
+
+
+
+You'll see that requests only exists inside the venv — that's the whole point: isolation per project.
+

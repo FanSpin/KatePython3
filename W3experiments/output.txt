@@ -1,0 +1,24 @@
+
+
+
+daniel@hp510:~/Downloads/W3experiments$ ls -la
+total 12
+drwxrwxr-x 2 daniel daniel 4096 Oct 15 16:51 .
+drwxr-xr-x 7 daniel daniel 4096 Oct 15 16:45 ..
+-rw-rw-r-- 1 daniel daniel    0 Oct 15 16:51 output.txt
+-rw-rw-r-- 1 daniel daniel  376 Oct 15 16:47 test.py
+
+
+
+daniel@hp510:~/Downloads/W3experiments$ python3 test.py
+Traceback (most recent call last):
+  File "/home/daniel/Downloads/W3experiments/test.py", line 1, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+
+
+daniel@hp510:~/Downloads/W3experiments$
+
+
+
