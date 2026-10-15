@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# numericl method corections
 # ODE: dy/dx = x*y,  y(0) = 1
 # Analytical: y = exp(x²/2)
 
