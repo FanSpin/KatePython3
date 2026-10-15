@@ -1,6 +1,6 @@
 
 # nn_xor.py
-
+un edited
 
 Here's a minimal, well-commented example that learns the XOR problem <br>
 — the classic "hello world" of neural nets (it's the simplest problem <br>
